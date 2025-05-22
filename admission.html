@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Admissions - PHIBMAT University</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="shortcut icon" href="/assets/images/phibmat.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        .btn { 
+    display: inline-block; 
+    padding: 12px 20px; 
+    background-color: #0676f6; 
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+    margin-top: 10px; 
+}
+
+.btn:hover { 
+    background-color: #7caffc; 
+}
+
+/* Form Styles */ 
+form { 
+    margin-top: 30px; 
+    display: flex; 
+    flex-direction: column;
+    gap: 15px; 
+}
+
+Form input, form textarea { 
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 1rem; 
+}
+
+Form input[type="submit"] { 
+    background-color: #1078ef; 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+    font-weight: bold; 
+    transition: background-color 0.3s ease; 
+}
+
+Form input[type="submit"]:hover {
+    background-color: #6da3f4; 
+}
+
+@media (max-width: 1200px) {
+    form input, form textarea {
+        font-size: 1rem; 
+        flex-direction: column;
+        }
+
+.btn { 
+    font-size: 1rem; 
+} 
+}
+    </style>
+</head>
+<body class="d-flex flex-column h-100 bg-light">
+    <main class="flex-shrink-0">
+    <header class="main-header">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+            <div class="container px-5">
+                <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">PHIBMAT UNIVERSITY INSTITUTE</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="faculty.html">Faculty & Staffs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="admission.html" class="active">Admission</a></li>
+                        <li class="nav-item"><a class="nav-link" href="accademics.html">Academic</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    </header>  
+    <section class="py-5">
+    <div class="container px-5">
+        <h1 class="display-3 fw-bolder mb-5" style="align-items: center; display: grid; justify-content: center;">Admissions</h1>
+        <h2 class="text-gradient d-inline" style="padding-top: 0px;">Join PHIBMAT University Institute and start your journey toward academic and professional excellence.</h2>
+    </div>
+    </section><br>  
+        <main class="container">
+        <h2 style="font-weight: bold;">Admission Requirements</h2>
+        <ul>
+            <li>PHOTOCOPY OF GCE A-LEVEL</li>
+            <li>PHOTOCOPY OF BIRTH CERTIFICATE</li>
+            <li>PHOTOCOPY OF I.D CARD</li>
+            <li>2 REAMS OF A4 PAPERS(NAVIGATOR)</li>
+            <li>1000FCFA FOR PICTURE</li>
+            <li>5000FCFA FOR MEDICAL COVERAGE</li>
+        </ul><br>
+        <h2 style="font-weight: bold;">How to Apply</h2>
+        <ol>
+            <li>Download and fill the application form</li>
+            <li>Attach required documents</li>
+            <li>Submit to the admissions office or via email</li>
+        </ol>
+        <a href="documents/PHIBMAT_Application_Form.pdf" class="btn" download>Download Application Form</a><br><br>
+        <h2 style="font-weight: bold;">Important Dates</h2>
+        <ul>
+            <li>Application Opens: July 1, 2025</li>
+            <li>Deadline: March 31, 2026</li>
+            <li>Entrance Exam: September 10, 2025</li>
+        </ul><br>
+        <h2 style="font-weight: bold;">Quick Contact</h2>
+        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br> 
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+        </main>
+    </main>
+    <footer class="bg-white py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto"><div class="small m-0">&copy; Phibmat University</div></div>
+                <div class="col-auto">
+                    <a class="small" href="#!">Privacy</a>
+                    <span class="mx-1">&middot;</span>
+                    <a class="small" href="#!">Terms</a>
+                    <span class="mx-1">&middot;</span>
+                    <a class="small" href="#!">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
